@@ -28,6 +28,37 @@ class brca_tcga(InMemoryDataset):
       The dataset contains the gene features of each patient in graph_features
       and the overall survival time (in months) of each patient,
       which are the labels.
+
+      Args:
+        root (str): Root directory where the dataset should be saved.
+        transform (callable, optional): A function/transform that takes in an
+            :obj:`torch_geometric.data.Data` object and returns a transformed
+            version. The data object will be transformed before every access.
+            (default: :obj:`None`)
+        pre_transform (callable, optional): A function/transform that takes in
+            an :obj:`torch_geometric.data.Data` object and returns a
+            transformed version. The data object will be transformed before
+            being saved to disk. (default: :obj:`None`)
+        pre_filter (callable, optional): A function that takes in an
+            :obj:`torch_geometric.data.Data` object and returns a boolean
+            value, indicating whether the data object should be included in the
+            final dataset. (default: :obj:`None`)
+
+
+      **STATS:**
+
+    .. list-table::
+        :widths: 10 10 10 10
+        :header-rows: 1
+
+        * - #graphs
+          - #nodes
+          - #edges
+          - #features
+        * - 1082
+          - 271771
+          - 1082
+          - 4
     '''
 
     # Base URL to download the files
