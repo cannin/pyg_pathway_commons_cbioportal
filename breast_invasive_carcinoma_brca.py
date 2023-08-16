@@ -67,7 +67,7 @@ class brca_tcga(InMemoryDataset):
     '''
 
     # Base URL to download the files
-    url = 'https://zenodo.org/record/8179187/files/brca_tcga.zip?download=1'
+    url = 'https://zenodo.org/record/8251328/files/brca_tcga.zip?download=1'
 
     def __init__(
         self,
