@@ -5,5 +5,5 @@ Data was preprocessed to form one dataset that could be converted to PyTorch Geo
 
 This data was retrieved in the CSV format, then processed to form a graph-based dataset for use with Graph Neural Networks (GNN).
 
-The dataset contains the gene features of each patient in graph_features and the overall survival time (in months) of each patient, which are the labels.
+The dataset contains the gene features of each patient and the overall survival time (in months) of each patient, which are the labels.
 
