@@ -4,7 +4,7 @@ from typing import Callable, Optional, Tuple
 import numpy as np
 import pandas as pd
 import torch
-from torch_geometric.data import (Data, InMemoryDataset, download_url,
+from torch_geometqric.data import (Data, InMemoryDataset, download_url,
                                   extract_zip)
 
 """InMemoryDataset Class with brca_tcga.ipynb
