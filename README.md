@@ -10,9 +10,10 @@ This data was retrieved in the CSV format, then processed to form a graph-based 
 
 The dataset contains the gene features of each patient and the overall survival time (in months) of each patient, which are the labels.
 
-Pipeline From Data Collection to Model Building
+# Pipeline From Data Collection to Model Building
+
 This is a set of notebooks that shows how data was collected, preprocessed and integrated, then converted to PyTorch Geometric Dataset
 
-# Overview of Repository
+## Overview of Repository
 1. 
 
