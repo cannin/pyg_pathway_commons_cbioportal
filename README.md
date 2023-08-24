@@ -1,4 +1,4 @@
-If you make use of this dataset, please cite the Zenodo DOI: 
+If you make use of this dataset, please cite the Zenodo DOI: https://zenodo.org/record/8251328
 
 # PyTorch Geometric Example Dataset using Pathway Commons and cBioPortal
 
@@ -20,7 +20,9 @@ This is a set of notebooks that shows how data was collected, preprocessed and i
    - brca_tcga_pan_can_atlas_2018(data_clinical_patient.txt, data_clinical_patient.txt and data_mrna_seq_v2_rsem.txt): 
      https://github.com/cBioPortal/datahub/tree/master/public/brca_tcga_pan_can_atlas_2018
    To have access to these datasets without having to go through the process needed to download datasets from cBioportal, you can access 
-   them on the Zenodo link.
+   them on Zenodo: https://zenodo.org/record/8251328
+
 NB: If you want to do these steps for a different dataset, then you have to download the required data from the sites. You can see how to download from cBioportal here: https://github.com/cBioPortal/datahub/tree/master
+
 2. Data Preprocessing: 
 
