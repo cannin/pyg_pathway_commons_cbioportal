@@ -19,4 +19,8 @@ This is a set of notebooks that shows how data was collected, preprocessed and i
    - Reactome subset from Pathway Commons: https://www.pathwaycommons.org/archives/PC2/v12/PathwayCommons12.reactome.hgnc.sif.gz
    - brca_tcga_pan_can_atlas_2018(data_clinical_patient.txt, data_clinical_patient.txt and data_mrna_seq_v2_rsem.txt): 
      https://github.com/cBioPortal/datahub/tree/master/public/brca_tcga_pan_can_atlas_2018
+   To have access to these datasets without having to go through the process needed to download datasets from cBioportal, you can access 
+   them on the Zenodo link.
+NB: If you want to do these steps for a different dataset, then you have to download the required data from the sites. You can see how to download from cBioportal here: https://github.com/cBioPortal/datahub/tree/master
+2. Data Preprocessing: 
 
