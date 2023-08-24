@@ -24,5 +24,10 @@ This is a set of notebooks that shows how data was collected, preprocessed and i
 
 NB: If you want to do these steps for a different dataset, then you have to download the required data from the sites. You can see how to download from cBioportal here: https://github.com/cBioPortal/datahub/tree/master
 
-2. Data Preprocessing: 
+2. Data Preprocessing: The steps that were followed after downloading the required datasets are shown in the notebook below.
+   https://github.com/cannin/pyg_pathway_commons_cbioportal/blob/main/breast_cancer_preprocesing.ipynb
+
+3. Data Integration: To convert to a PyG Dataset, a list of graphs were created from the preprocessed dataset first. Then these graphs were 
+    converted to data objects. These steps are shown in the python script below.
+    https://github.com/cannin/pyg_pathway_commons_cbioportal/blob/main/breast_invasive_carcinoma_brca.py
 
