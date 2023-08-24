@@ -15,5 +15,8 @@ The dataset contains the gene features of each patient and the overall survival 
 This is a set of notebooks that shows how data was collected, preprocessed and integrated, then converted to PyTorch Geometric Dataset
 
 ## Overview of Repository
-1. 
+1. Data Collection: The Datasets that were collected from cbioportal and Pathway Commons are:
+   - Reactome subset from Pathway Commons: https://www.pathwaycommons.org/archives/PC2/v12/PathwayCommons12.reactome.hgnc.sif.gz
+   - brca_tcga_pan_can_atlas_2018(data_clinical_patient.txt, data_clinical_patient.txt and data_mrna_seq_v2_rsem.txt): 
+     https://github.com/cBioPortal/datahub/tree/master/public/brca_tcga_pan_can_atlas_2018
 
