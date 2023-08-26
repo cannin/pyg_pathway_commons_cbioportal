@@ -38,19 +38,20 @@ NB: If you want to do these steps for a different dataset, then you have to down
 
    The final results gotten from these steps include:
 
-   Training set: X_train, y_train
-   Validation set: X_val, y_val
-   Test set: X_test, y_test
-   Gene features: graph_idx
-   Labels: graph_labels
-   edges: edge_index
+   - X_train, y_train, X_val, y_val, X_test, y_test.
+   
+   - Gene features: graph_idx
+     
+   - Labels: graph_labels
+     
+   - edges: edge_index
 
    All the datasets can be accessed here: https://zenodo.org/record/8251328
 
    The steps that were followed after downloading the required datasets are shown in the notebook below.
    https://github.com/cannin/pyg_pathway_commons_cbioportal/blob/main/breast_cancer_preprocesing.ipynb
 
-3. Data Integration: To convert to a PyG Dataset, a list of graphs were created from the preprocessed dataset first.
+4. Data Integration: To convert to a PyG Dataset, a list of graphs were created from the preprocessed dataset first.
    
     Then these graphs were converted to data objects. These steps are shown in the provided notebook. For further integration with
 
@@ -70,7 +71,7 @@ NB: If you want to do these steps for a different dataset, then you have to down
        
     3. edge_index: This consists of the total edges. It was gotten from the preprocessing of the Pathway Commons dataset
   
-4. Modelling: The dataset was then used for modelling. First a baseline model was created using FLAML, then a Graph Neural Network(GNN) model was built using GCNConv.
+5. Modelling: The dataset was then used for modelling. First a baseline model was created using FLAML, then a Graph Neural Network(GNN) model was built using GCNConv.
    The two notebooks below show the modelling steps that was carried out.
 
    Baseline model: https://github.com/cannin/pyg_pathway_commons_cbioportal/blob/main/baseline_model_with_brca_data.ipynb
