@@ -28,13 +28,9 @@ This is a set of notebooks that shows how data was collected, preprocessed and i
 NB: If you want to do these steps for a different dataset, then you have to download the required data from the sites. You can see how to download from cBioportal here: https://github.com/cBioPortal/datahub/tree/master
 
 2. Data Preprocessing: For the creation of this sample dataset, the data_clinical_patient.txt and data_clinical_patient.txt were merged based on the patient identifier.
-
    After which, the only columns kept were the sample identifier, patient identifier and overall survival(months) of each patient.
-
    Next, the merged dataset was merged with the data_mrna_seq_v2_rsem.txt on the sample identifiers. 
-
    Then this new dataset was splitted into X and y which represents features and labels.
-
    In this notebook, work was also done on creating training, test and validation splits for modelling using the 60:20:20 rule.
 
    The final results gotten from these steps include:
@@ -72,6 +68,8 @@ NB: If you want to do these steps for a different dataset, then you have to down
     The zipped file contains of the 3 main datasets used for the integration:
 
     1. graph_idx: This consists the gene features of the patients. It was gotten by preprocessing the datasets from cBioportal
+       
     2. graph_labels: This consists of the overall survival(months) of each patient. It was also gotten from the preprocessing done on cBioportal
+       
     3. edge_index: This consists of the total edges. It was gotten from the preprocessing of the Pathway Commons dataset
 
