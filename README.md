@@ -35,7 +35,7 @@ This is a set of notebooks that shows how data was collected, preprocessed and i
    After which, the only columns kept were the sample identifier, patient identifier and overall survival(months) of each patient.
    Next, the merged dataset was merged with the data_mrna_seq_v2_rsem.txt on the sample identifiers. 
    Then this new dataset was splitted into X and y which represents features and labels.
-   In this notebook, work was also done on creating training, test and validation splits for modelling using the 60:20:20 rule.
+   In this stage, work was also done on creating training, test and validation splits for modelling using the 60:20:20 rule.
 
    The final results gotten from these steps include:
 
