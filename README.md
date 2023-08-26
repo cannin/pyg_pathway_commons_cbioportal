@@ -73,9 +73,9 @@ NB: If you want to do these steps for a different dataset, then you have to down
 4. Modelling: The dataset was then used for modelling. First a baseline model was created using FLAML, then a Graph Neural Network(GNN) model was built using GCNConv.
    The two notebooks below show the modelling steps that was carried out.
 
-   Baseline model:
+   Baseline model: https://github.com/cannin/pyg_pathway_commons_cbioportal/blob/main/baseline_model_with_brca_data.ipynb
 
-   GNN model:
+   GNN model: https://github.com/cannin/pyg_pathway_commons_cbioportal/blob/main/modelling_with_breast_cancer_data.ipynb
 
 ## Please Note:
    Different GNN models were tried out using this dataset and different experiments such as hyperparameter tuning was carried out to determine best model. To see these other changes,
