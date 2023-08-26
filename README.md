@@ -60,7 +60,7 @@ This is a set of notebooks that shows how data was collected, preprocessed and i
    
    Python Script for Dataset: https://github.com/cannin/pyg_pathway_commons_cbioportal/blob/main/breast_invasive_carcinoma_brca.py
    
-   The final Result gotten from these have benn uploaded to the Zenodo site and can be downloaded with this link: 
+   The final Result gotten from these have benn uploaded to the Zenodo site and can be downloaded with this link: https://zenodo.org/record/8251328/files/brca_tcga.zip?download=1
 
    The zipped file contains of the 3 main datasets used for the integration:
 
