@@ -31,11 +31,11 @@ This is a set of notebooks that shows how data was collected, preprocessed and i
    NB: If you want to do these steps for a different dataset, then you have to download the required data from the sites. You can see how to download from cBioportal here: 
    https://github.com/cBioPortal/datahub/tree/master
 
-2. Data Preprocessing: For the creation of this sample dataset, the data_clinical_patient.txt and data_clinical_patient.txt were merged based on the patient identifier.
-   After which, the only columns kept were the sample identifier, patient identifier and overall survival(months) of each patient.
-   Next, the merged dataset was merged with the data_mrna_seq_v2_rsem.txt on the sample identifiers. 
-   Then this new dataset was splitted into X and y which represents features and labels.
-   In this stage, work was also done on creating training, test and validation splits for modelling using the 60:20:20 rule.
+2. Data Preprocessing: For the creation of this sample dataset, the data_clinical_patient.txt and data_clinical_patient.txt were merged based on the patient identifier. After which, 
+   the only columns kept were the sample identifier, patient identifier and overall survival(months) of each patient. Then, the Gene expression features (N=9288) that overlapped with 
+   biological network data from Pathway Commonswere extracted from the data_mrna_seq_v2_rsem.txt dataset, this was then merged with the first merged data based on the sample 
+   identifiers. Additionally, overall survival time in months was extracted as the value to be predicted. Then this new dataset was splitted into X and y which represents features and 
+   labels. In this stage, work was also done on creating training, test and validation splits for modelling using the 60:20:20 rule
 
    The final results gotten from these steps include:
 
@@ -52,9 +52,10 @@ This is a set of notebooks that shows how data was collected, preprocessed and i
    The steps that were followed after downloading the required datasets are shown in the notebook below.
    https://github.com/cannin/pyg_pathway_commons_cbioportal/blob/main/breast_cancer_preprocesing.ipynb
 
-4. Data Integration: To convert to a PyG Dataset, a list of graphs were created from the preprocessed dataset first.
-   Then these graphs were converted to data objects. These steps are shown in the provided notebook.
-   For further integration with the PyG provided datasets, the notebook was converted to a python script which can be accessed below.
+4. Data Integration: In this stage, an edge index (N=271771 edges) was generated using Pathway Commons v12 data in a tabular format. To convert to a PyG Dataset, a list of graphs were 
+   created from the preprocessed dataset first. Then, these two data types were integrated which resulted in patient-specific graphs which were then converted into PyG data objects. 
+   These steps are shown in the provided notebook. Finally, these graphs are wrapped using the InMemoryDataset class for use with PyG.
+   For contribution to PyG Github, the notebook was converted to a python script which can be accessed below.
 
    Notebook for Integration: https://github.com/cannin/pyg_pathway_commons_cbioportal/blob/main/InMemoryDataset_Class_with_brca_tcga.ipynb
    
