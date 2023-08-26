@@ -28,7 +28,8 @@ This is a set of notebooks that shows how data was collected, preprocessed and i
    To have access to these datasets without having to go through the process needed to download datasets from cBioportal, you can access 
    them on Zenodo: https://zenodo.org/record/8251328
 
-NB: If you want to do these steps for a different dataset, then you have to download the required data from the sites. You can see how to download from cBioportal here: https://github.com/cBioPortal/datahub/tree/master
+   NB: If you want to do these steps for a different dataset, then you have to download the required data from the sites. You can see how to download from cBioportal here: 
+   https://github.com/cBioPortal/datahub/tree/master
 
 2. Data Preprocessing: For the creation of this sample dataset, the data_clinical_patient.txt and data_clinical_patient.txt were merged based on the patient identifier.
    After which, the only columns kept were the sample identifier, patient identifier and overall survival(months) of each patient.
@@ -55,13 +56,13 @@ NB: If you want to do these steps for a different dataset, then you have to down
    Then these graphs were converted to data objects. These steps are shown in the provided notebook.
    For further integration with the PyG provided datasets, the notebook was converted to a python script which can be accessed below.
 
-    Notebook for Integration: https://github.com/cannin/pyg_pathway_commons_cbioportal/blob/main/InMemoryDataset_Class_with_brca_tcga.ipynb
+   Notebook for Integration: https://github.com/cannin/pyg_pathway_commons_cbioportal/blob/main/InMemoryDataset_Class_with_brca_tcga.ipynb
    
-    Python Script for Dataset: https://github.com/cannin/pyg_pathway_commons_cbioportal/blob/main/breast_invasive_carcinoma_brca.py
+   Python Script for Dataset: https://github.com/cannin/pyg_pathway_commons_cbioportal/blob/main/breast_invasive_carcinoma_brca.py
    
-    The final Result gotten from these have benn uploaded to the Zenodo site and can be downloaded with this link: 
+   The final Result gotten from these have benn uploaded to the Zenodo site and can be downloaded with this link: 
 
-    The zipped file contains of the 3 main datasets used for the integration:
+   The zipped file contains of the 3 main datasets used for the integration:
 
     1. graph_idx: This consists the gene features of the patients. It was gotten by preprocessing the datasets from cBioportal
        
