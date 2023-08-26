@@ -52,10 +52,8 @@ NB: If you want to do these steps for a different dataset, then you have to down
    https://github.com/cannin/pyg_pathway_commons_cbioportal/blob/main/breast_cancer_preprocesing.ipynb
 
 4. Data Integration: To convert to a PyG Dataset, a list of graphs were created from the preprocessed dataset first.
-   
-    Then these graphs were converted to data objects. These steps are shown in the provided notebook. For further integration with
-
-    the PyG provided datasets, the notebook was converted to a python script which can be accessed below.
+   Then these graphs were converted to data objects. These steps are shown in the provided notebook.
+   For further integration with the PyG provided datasets, the notebook was converted to a python script which can be accessed below.
 
     Notebook for Integration: https://github.com/cannin/pyg_pathway_commons_cbioportal/blob/main/InMemoryDataset_Class_with_brca_tcga.ipynb
    
@@ -71,7 +69,7 @@ NB: If you want to do these steps for a different dataset, then you have to down
        
     3. edge_index: This consists of the total edges. It was gotten from the preprocessing of the Pathway Commons dataset
   
-5. Modelling: The dataset was then used for modelling. First a baseline model was created using FLAML, then a Graph Neural Network(GNN) model was built using GCNConv.
+6. Modelling: The dataset was then used for modelling. First a baseline model was created using FLAML, then a Graph Neural Network(GNN) model was built using GCNConv.
    The two notebooks below show the modelling steps that was carried out.
 
    Baseline model: https://github.com/cannin/pyg_pathway_commons_cbioportal/blob/main/baseline_model_with_brca_data.ipynb
